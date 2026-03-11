@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import os
 
 app = Flask(__name__)
-
+FAKE_API_KEY = "AKIA1234567890ABCD12"
 @app.route("/")
 def home():
     return jsonify({
